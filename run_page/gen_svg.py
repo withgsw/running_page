@@ -67,7 +67,7 @@ def main():
         "--athlete",
         metavar="NAME",
         type=str,
-        default="John Doe",
+        default="Max",
         help='Athlete name to display (default: "John Doe").',
     )
     args_parser.add_argument(
