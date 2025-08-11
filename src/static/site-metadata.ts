@@ -17,7 +17,7 @@ const getBasePath = () => {
 const data: ISiteMetadataResult = {
   siteTitle: 'Max Running',
   siteUrl: 'https://maxrunning.vercel.app',
-  logo: 'https://postimg.cc/TKqcG0Ff',
+  logo: 'https://i.postimg.cc/2Sg9QXxb/2730369-blue-character-inkcontober-run-sonic-icon.png',
   description: 'Personal site and blog',
   navLinks: [
     {
