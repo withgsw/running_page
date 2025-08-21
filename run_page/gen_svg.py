@@ -61,7 +61,10 @@ def main():
         help='Filter tracks by year; "NUM", "NUM-NUM", "all" (default: all years)',
     )
     args_parser.add_argument(
-        "--title", metavar="TITLE", type=str, help="Title to display."
+        "--title",
+	metavar="TITLE",
+	type=str,
+	help="Title to display."
     )
     args_parser.add_argument(
         "--athlete",
@@ -156,7 +159,7 @@ def main():
         dest="special_distance2",
         metavar="DISTANCE",
         type=float,
-        default=20.0,
+        default=15.0,
         help="Special Distance2 by km and corlor with the special_color2",
     )
     args_parser.add_argument(
