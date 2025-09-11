@@ -22,6 +22,7 @@
    - For old data: To include `Elevation Gain` for past activities, perform a full reimport.
    - To show the 'Elevation Gain' column, modify `SHOW_ELEVATION_GAIN` in `src/utils/const.ts`
    - note: `Elevation Gain` may be inaccurate. You can use Strava's "Correct Elevation" or Garmin's "Elev Corrections" feature for more precise data.
+6. It cost me a lot money, so please do not use my mapbox token more check this [issue](https://github.com/yihong0618/running_page/issues/643)
 
 <p align="center">
   <img width="150" src="https://raw.githubusercontent.com/shaonianche/gallery/master/running_page/running_page_logo.png" />
@@ -124,6 +125,7 @@ English | [简体中文](https://github.com/yihong0618/running_page/blob/master/
 | [Daniel](https://danielyu316.github.io/running_page) | <https://danielyu316.github.io/running_page/>  | Codoon      |
 | [arthurfsy2](https://github.com/arthurfsy2)          | <https://fsy.4a1801.life>                      | Garmin      |
 | [JMGutiH](https://github.com/JMGutiH)                | <https://jmgutih.github.io/workouts_page/>     | Strava      |
+| [Bolyn](https://run.wbolyn.com)                | <https://run.wbolyn.com>     | Coros      |
 
 </details>
 
@@ -161,6 +163,7 @@ English | [简体中文](https://github.com/yihong0618/running_page/blob/master/
 - **[Garmin_to_Strava(Using Garmin Run, Strava backup data)](#garmin_to_strava)**
 - **[Strava_to_Garmin(Using Strava Run, Garmin backup data)](#strava_to_garmin)**
 - **[Coros](#coros)**
+- **[iGPSPORT](#igpsport)**
 
 ## Download
 
@@ -827,6 +830,21 @@ python run_page/coros_sync.py 'your coros account' 'your coros password'
 - configure the `COROS_ACCOUNT` , `COROS_PASSWORD`
 
   ![github-action](https://img3.uploadhouse.com/fileuploads/30980/3098042335f8995623f8b50776c4fad4cf7fff8d.png)
+
+</details>
+
+### iGPSPORT
+
+<details>
+<summary>Get your iGPSPORT data</summary>
+
+#### Enter the following command in the terminal
+
+```bash
+python3 run_page/igpsport_sync.py 'your igpsport account' 'your igpsport password' -with-gpx
+```
+
+You can replace `with-gpx` with `with-fit` to acquire data in fit format.
 
 </details>
 

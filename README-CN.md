@@ -22,6 +22,7 @@
    - For old data: To include `Elevation Gain` for past activities, perform a full reimport.
    - To show the 'Elevation Gain' column, modify `SHOW_ELEVATION_GAIN` in `src/utils/const.ts`
    - note: `Elevation Gain` may be inaccurate. You can use Strava's "Correct Elevation" or Garmin's "Elev Corrections" feature for more precise data.
+6. 请使用自己的 mapxbox token 参考这个 [issue](https://github.com/yihong0618/running_page/issues/643)
 
 ![running_page](https://socialify.git.ci/yihong0618/running_page/image?description=1&font=Inter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fshaonianche%2Fgallery%2Fmaster%2Frunning_page%2Frunning_page_logo_150*150.jpg&owner=1&pulls=1&stargazers=1&theme=Light)
 
@@ -121,6 +122,7 @@ R.I.P. 希望大家都能健康顺利的跑过终点，逝者安息。
 | [Evan](https://github.com/LinghaoChan)            | <https://github.com/LinghaoChan/running>       | Keep        |
 | [Shuqi](https://github.com/zhufengme)             | <https://runner-shuqi.devlink.cn/>             | Garmin      |
 | [shugoal](https://github.com/shugoal)             | <https://shugoal.github.io/wk-shu/>            | Garmin      |
+| [Bolyn](https://run.wbolyn.com)                | <https://run.wbolyn.com>     | Coros      |
 
 </details>
 
@@ -170,6 +172,7 @@ R.I.P. 希望大家都能健康顺利的跑过终点，逝者安息。
 - **[Garmin_to_Strava(Using Garmin Run, Strava backup data)](#garmin_to_strava)**
 - **[Strava_to_Garmin(Using Strava Run, Garmin backup data)](#strava_to_garmin)**
 - **[Coros 高驰](#coros-高驰)**
+- **[iGPSPORT迹驰](#igpsport)**
 
 ## 视频教程
 
@@ -957,6 +960,21 @@ python run_page/coros_sync.py ${{ secrets.COROS_ACCOUNT }} ${{ secrets.COROS_PAS
 - 在 github action 中配置 `COROS_ACCOUNT`，`COROS_PASSWORD` 参数
 
   ![github-action](https://img3.uploadhouse.com/fileuploads/30980/3098042335f8995623f8b50776c4fad4cf7fff8d.png)
+
+</details>
+
+### iGPSPORT
+
+<details>
+<summary>获取您的 iGPSPORT 迹驰 数据</summary>
+
+#### 在终端中输入以下命令
+
+```bash
+python run_page/igpsport_sync.py ${iGPSPORT_mobile} ${iGPSPORTS_password} --with-gpx
+```
+
+如果你想要 fit 格式的数据而非 gpx,可以将`--with-gpx`替换为`--with-fit`。
 
 </details>
 
