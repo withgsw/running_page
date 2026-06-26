@@ -36,6 +36,13 @@ Set `RUN_TYPE` env to one of: `strava`, `nike`, `garmin`, `garmin_cn`, `keep`, `
 
 Post-sync: auto-generates `assets/github.svg`, `assets/grid.svg`, `assets/github_<year>.svg`, circular SVG, and month-of-life SVGs.
 
+## Strava Credentials (for auto-sync)
+- client_id: `172194`
+- client_secret: `1f46398ccdf464669fb0d08386f8443051a6d99d`
+- refresh_token: `e51ed9b1efa7ce98181624440222b3a7b78bd95c`
+- Sync command: `python run_page/strava_sync.py 172194 "<client_secret>" "<refresh_token>" --only-run`
+- Then regenerate SVGs (see workflow `run_data_sync.yml` lines 212-215 for commands)
+
 ## Key files
 
 | File | Purpose |

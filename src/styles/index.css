@@ -49,20 +49,20 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* const nike = 'rgb(224,237,94)'; */
-    --color-brand: #e0ed5e;
-    --color-secondary: #ccd94a;
-    --color-bg: var(--color-neutral-900);
-    --color-tx: var(--color-brand);
-    --color-hr: var(--color-red-500);
-    --color-selected: var(--color-brand);
-    --color-run-date: var(--color-neutral-300);
-    --color-run-table-thead: var(--color-zinc-300);
-    --color-run-row-hover-background: var(--color-neutral-800);
-    --color-activity-card: var(--color-neutral-700);
-    --svg-color-active-cell: #4dd2ff;
-    --svg-special-color: #f7d02c;
-    --svg-special-color2: #f56c6c;
+    /* const nike = '#2dd4bf'; */
+    --color-brand: #2dd4bf;
+    --color-secondary: #14b8a6;
+    --color-bg: #0c0e12;
+    --color-tx: #e2e8f0;
+    --color-hr: #2dd4bf;
+    --color-selected: #2dd4bf;
+    --color-run-date: #94a3b8;
+    --color-run-table-thead: #e2e8f0;
+    --color-run-row-hover-background: #1e2329;
+    --color-activity-card: #2a2f36;
+    --svg-color-active-cell: #2dd4bf;
+    --svg-special-color: #f59e0b;
+    --svg-special-color2: #f43f5e;
     --font-sans: 'IBM Plex Sans', sans-serif;
     --font-mono: 'IBM Plex Mono', monospace;
   }
@@ -89,20 +89,20 @@
 }
 
 [data-theme='dark'] {
-  /* const nike = 'rgb(224,237,94)'; */
-  --color-brand: #e0ed5e;
-  --color-secondary: #ccd94a;
-  --color-bg: var(--color-neutral-900);
-  --color-tx: var(--color-brand);
-  --color-hr: var(--color-red-500);
-  --color-selected: var(--color-brand);
-  --color-run-date: var(--color-neutral-300);
-  --color-run-table-thead: var(--color-zinc-300);
-  --color-run-row-hover-background: var(--color-neutral-800);
-  --color-activity-card: var(--color-neutral-700);
-  --svg-color-active-cell: #4dd2ff;
-  --svg-special-color: #f7d02c;
-  --svg-special-color2: #f56c6c;
+  /* const nike = '#2dd4bf'; */
+  --color-brand: #2dd4bf;
+  --color-secondary: #14b8a6;
+  --color-bg: #0c0e12;
+  --color-tx: #e2e8f0;
+  --color-hr: #2dd4bf;
+  --color-selected: #2dd4bf;
+  --color-run-date: #94a3b8;
+  --color-run-table-thead: #e2e8f0;
+  --color-run-row-hover-background: #1e2329;
+  --color-activity-card: #2a2f36;
+  --svg-color-active-cell: #2dd4bf;
+  --svg-special-color: #f59e0b;
+  --svg-special-color2: #f43f5e;
   --font-sans: 'IBM Plex Sans', sans-serif;
   --font-mono: 'IBM Plex Mono', monospace;
 }
