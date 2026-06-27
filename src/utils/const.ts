@@ -166,23 +166,23 @@ export {
   LOADING_TEXT,
 };
 
-const nike = '#2dd4bf'; // if you want to change the main color, modify this value in src/styles/variables.scss
+const purple = '#A855F7'; // if you want to change the main color, modify this value
 const dark_vanilla = 'rgb(228,212,220)';
 
 // If your map has an offset please change this line
 // issues #92 and #198
 export const NEED_FIX_MAP = false;
-export const MAIN_COLOR = nike;
-export const PROVINCE_FILL_COLOR = '#47b8e0';
+export const MAIN_COLOR = purple;
+export const PROVINCE_FILL_COLOR = '#7C3AED';
 export const COUNTRY_FILL_COLOR = dark_vanilla;
 
 // Static color constants
-export const RUN_COLOR_LIGHT = '#47b8e0';
-export const RUN_COLOR_DARK = MAIN_COLOR;
+export const RUN_COLOR_LIGHT = '#7C3AED'; // Deep purple for light theme
+export const RUN_COLOR_DARK = MAIN_COLOR;  // #A855F7 neon purple for dark
 
 // Single run animation colors
-export const SINGLE_RUN_COLOR_LIGHT = '#52c41a'; // Green for light theme
-export const SINGLE_RUN_COLOR_DARK = '#f59e0b'; // Amber for dark theme
+export const SINGLE_RUN_COLOR_LIGHT = '#16A34A'; // Green for light theme
+export const SINGLE_RUN_COLOR_DARK = '#22D95F';  // Fluorescent green for dark theme
 
 // Helper function to get theme-aware RUN_COLOR
 export const getRuntimeRunColor = (): string => {
@@ -217,12 +217,12 @@ export const getRuntimeSingleRunColor = (): string => {
 };
 
 // Legacy export for backwards compatibility
-export const RUN_COLOR = '#47b8e0';
-export const RUN_TRAIL_COLOR = '#f59e0b';
-export const CYCLING_COLOR = '#22c55e';
-export const HIKING_COLOR = '#8b5cf6';
+export const RUN_COLOR = '#7C3AED';
+export const RUN_TRAIL_COLOR = '#F59E0B';
+export const CYCLING_COLOR = '#22D95F';
+export const HIKING_COLOR = '#06B6D4';
 export const WALKING_COLOR = HIKING_COLOR;
-export const SWIMMING_COLOR = '#f43f5e';
+export const SWIMMING_COLOR = '#F43F5E';
 
 // map tiles vendor, maptiler or mapbox or stadiamaps
 // if you want to use maptiler, set the access token in MAP_TILE_ACCESS_TOKEN

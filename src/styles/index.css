@@ -1,6 +1,6 @@
-/* IBM Plex Sans and IBM Plex Mono fonts */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* Inter and JetBrains Mono fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 @import 'tailwindcss';
 @import './mobile.css';
@@ -20,91 +20,90 @@
   /* activity-card */
   --color-activity-card: var(--color-activity-card);
   /* svg */
-  --svg-color-active-cell: var(--svg-color-inactive-cell);
+  --svg-color-active-cell: var(--svg-color-active-cell);
+  --svg-color-inactive-cell: var(--svg-color-inactive-cell);
   /* fonts */
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-mono);
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 }
 
 /* 1. System Theme (Base) */
 @media (prefers-color-scheme: light) {
   :root {
-    --color-brand: var(--color-sky-900);
-    --color-secondary: var(--color-sky-800);
-    --color-bg: var(--color-neutral-100);
-    --color-tx: var(--color-sky-900);
-    --color-hr: var(--color-neutral-300);
-    --color-selected: var(--color-sky-900);
-    --color-run-date: var(--color-neutral-800);
-    --color-run-table-thead: var(--color-neutral-800);
-    --color-run-row-hover-background: var(--color-neutral-200);
-    --color-activity-card: var(--color-neutral-300);
-    --svg-color-active-cell: var(--color-neutral-400);
-    --svg-special-color: #d4a574;
-    --svg-special-color2: #c5756b;
-    --font-sans: 'IBM Plex Sans', sans-serif;
-    --font-mono: 'IBM Plex Mono', monospace;
+    --color-brand: #7C3AED;
+    --color-secondary: #16A34A;
+    --color-bg: #F8F7FF;
+    --color-tx: #1E293B;
+    --color-hr: #E2E0F0;
+    --color-selected: #7C3AED;
+    --color-run-date: #64748B;
+    --color-run-table-thead: #1E293B;
+    --color-run-row-hover-background: #F0EEFF;
+    --color-activity-card: #E2E0F0;
+    --svg-color-active-cell: #16A34A;
+    --svg-special-color: #D97706;
+    --svg-special-color2: #E11D48;
+    --font-sans: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* const nike = '#2dd4bf'; */
-    --color-brand: #2dd4bf;
-    --color-secondary: #14b8a6;
-    --color-bg: #0c0e12;
-    --color-tx: #e2e8f0;
-    --color-hr: #2dd4bf;
-    --color-selected: #2dd4bf;
-    --color-run-date: #94a3b8;
-    --color-run-table-thead: #e2e8f0;
-    --color-run-row-hover-background: #1e2329;
-    --color-activity-card: #2a2f36;
-    --svg-color-active-cell: #2dd4bf;
-    --svg-special-color: #f59e0b;
-    --svg-special-color2: #f43f5e;
-    --font-sans: 'IBM Plex Sans', sans-serif;
-    --font-mono: 'IBM Plex Mono', monospace;
+    --color-brand: #A855F7;
+    --color-secondary: #22D95F;
+    --color-bg: #0A0A14;
+    --color-tx: #E2E8F0;
+    --color-hr: #2D2D5A;
+    --color-selected: #A855F7;
+    --color-run-date: #94A3B8;
+    --color-run-table-thead: #E2E8F0;
+    --color-run-row-hover-background: #14142A;
+    --color-activity-card: #2D2D5A;
+    --svg-color-active-cell: #22D95F;
+    --svg-special-color: #F59E0B;
+    --svg-special-color2: #F43F5E;
+    --font-sans: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
   }
 }
 
 /* 2. Manual Override (Higher Priority) */
 [data-theme='light'] {
-  --color-brand: var(--color-sky-900);
-  --color-secondary: var(--color-sky-800);
-  --color-bg: var(--color-neutral-100);
-  --color-tx: var(--color-sky-900);
-  --color-hr: var(--color-neutral-300);
-  --color-selected: var(--color-sky-900);
-  --color-run-date: var(--color-neutral-800);
-  --color-run-table-thead: var(--color-neutral-800);
-  --color-run-row-hover-background: var(--color-neutral-200);
-  --color-activity-card: var(--color-neutral-300);
-  --svg-color-inactive-cell: var(--color-neutral-600);
-  --svg-color-active-cell: var(--color-neutral-400);
-  --svg-special-color: #d4a574;
-  --svg-special-color2: #c5756b;
-  --font-sans: 'IBM Plex Sans', sans-serif;
-  --font-mono: 'IBM Plex Mono', monospace;
+  --color-brand: #7C3AED;
+  --color-secondary: #16A34A;
+  --color-bg: #F8F7FF;
+  --color-tx: #1E293B;
+  --color-hr: #E2E0F0;
+  --color-selected: #7C3AED;
+  --color-run-date: #64748B;
+  --color-run-table-thead: #1E293B;
+  --color-run-row-hover-background: #F0EEFF;
+  --color-activity-card: #E2E0F0;
+  --svg-color-inactive-cell: #D4D0E8;
+  --svg-color-active-cell: #16A34A;
+  --svg-special-color: #D97706;
+  --svg-special-color2: #E11D48;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 }
 
 [data-theme='dark'] {
-  /* const nike = '#2dd4bf'; */
-  --color-brand: #2dd4bf;
-  --color-secondary: #14b8a6;
-  --color-bg: #0c0e12;
-  --color-tx: #e2e8f0;
-  --color-hr: #2dd4bf;
-  --color-selected: #2dd4bf;
-  --color-run-date: #94a3b8;
-  --color-run-table-thead: #e2e8f0;
-  --color-run-row-hover-background: #1e2329;
-  --color-activity-card: #2a2f36;
-  --svg-color-active-cell: #2dd4bf;
-  --svg-special-color: #f59e0b;
-  --svg-special-color2: #f43f5e;
-  --font-sans: 'IBM Plex Sans', sans-serif;
-  --font-mono: 'IBM Plex Mono', monospace;
+  --color-brand: #A855F7;
+  --color-secondary: #22D95F;
+  --color-bg: #0A0A14;
+  --color-tx: #E2E8F0;
+  --color-hr: #2D2D5A;
+  --color-selected: #A855F7;
+  --color-run-date: #94A3B8;
+  --color-run-table-thead: #E2E8F0;
+  --color-run-row-hover-background: #14142A;
+  --color-activity-card: #2D2D5A;
+  --svg-color-active-cell: #22D95F;
+  --svg-special-color: #F59E0B;
+  --svg-special-color2: #F43F5E;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 }
 
 @layer base {
